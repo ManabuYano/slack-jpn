@@ -1,0 +1,13 @@
+{
+  "name": "Slack-JPN",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Slackをなんとなく日本語化するChrome拡張",
+  "content_scripts": [
+    {
+      "matches": ["*://*.slack.com/*"],
+      "js": ["js/jquery-2.1.4.min.js","js/slack-jpn.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
